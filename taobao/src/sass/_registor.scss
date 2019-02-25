@@ -1,0 +1,91 @@
+#content{
+      padding-top:20px; 
+      .c-top{
+          line-height:83px;
+          img{
+              float:left;
+          }
+          h2{
+              font-size:24px;
+              font-weight: normal;
+              color:#000000;
+              margin-left:160px;
+          }
+      } 
+      .c-mid{
+          border-bottom:1px solid #ddd;
+          width:100%;
+          ul{
+              margin-left:200px;
+              &:after{
+                @include clear;  
+              }
+          }
+          li{
+              text-align: center;
+              float:left;
+              line-height:48px;
+              width:180px;
+          }
+          li:nth-of-type(2){
+              border-bottom:1px solid #ff4700;
+              i{
+                  background: #ff4700;
+              }
+          }
+          i{
+              display:inline-block;
+              width:24px;
+              line-height:24px;
+              text-align:center;
+              border-radius: 50%;
+              background: #ccc;
+              color:#fff;
+          }
+          span{
+              line-height:48px;
+              float:right;
+              font-size:12px;
+              a{
+                    border:1px solid #DDDDDD;
+                    padding:0 5px; 
+                    border-radius: 5px;
+                    color:#000;
+              }
+          }
+          
+      }
+      .c-bot{
+          em{
+              margin-left:5px;
+              font-size:12px;
+              font-style:normal;
+          }
+          form{
+              width:580px;
+              margin: 0 auto;
+              margin-top:40px;
+          }
+          input{
+              width:300px;
+              height:35px;
+              margin-top:20px;
+          }
+          h3{
+              display:inline-block;
+          }
+          p{
+              line-height:40px; 
+          }
+      }
+      .formtop{
+          padding:40px 0;
+      }
+      input[type="button"]{
+          background: #f40;
+          color:#fff;
+          border:0;
+          font-size:16px;
+          width:180px;
+      }
+}

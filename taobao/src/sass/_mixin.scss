@@ -1,0 +1,23 @@
+//清除浮动的css
+@mixin clear{
+    content:"";
+    display:block;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+}
+@mixin i{
+    text-align: left;
+    line-height:0px;
+    overflow: hidden;
+    display:inline-block;
+    width:10px;
+    height:4px;
+    font-size:10px;
+    vertical-align: middle;
+}
+@mixin p{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

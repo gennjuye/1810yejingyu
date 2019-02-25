@@ -1,0 +1,31 @@
+@import "mixin";
+//主页面字体           
+.site-nav-icon {
+    font-family: global-iconfont;
+    font-size: 12px;
+    font-style: normal;
+}
+.tb-ifont {//注册页字体
+    font-family: iconfont!important;
+    }
+.iconfont {//登录页字体
+    font-family: iconfont!important;
+    font-size: 16px;
+    } 
+.tb-iconfont {//详情页字体
+    font-family: tb-iconfont!important; 
+    color:#fff;
+     margin-right:20px;
+      } 
+//居中盒子的CSS
+.public{
+    width:1190px;
+    margin:0 auto;
+}
+@import "header";
+@import "bodye";
+@import "footer";
+@import "login";
+@import "registor";
+@import "details";
+@import "cart";

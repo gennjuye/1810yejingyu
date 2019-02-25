@@ -1,0 +1,549 @@
+
+
+@import "mixin";
+#bodyer{
+    width:100%;
+    background: #f4f4f4;
+}
+//----------------------------------------------------------content1-------------------------------------------------
+    .content1{
+        &:after{
+            @include clear;
+        }
+        width:100%;
+        height:632px;
+        .content1-left{//最外层左边的容器
+            float:left;
+            margin-bottom:10px;
+            width:892px;
+            box-sizing: border-box;
+            a{
+            line-height:32px;
+            font-size:14px;
+            color:#666;
+        }
+        }
+        .cbot{       //<!------------淘宝头条区域-->
+            float:left;
+            width:892px;
+            height:100px;
+            background: #fff;
+            margin-top:10px;
+            padding:14px 12px 12px 20px;
+            box-sizing: border-box;
+        }
+        .cbot-left{
+            float:left;
+            height:73px;
+            width:180px;
+            img{
+                width:80%;
+            }
+            p{
+                line-height:24px;
+                font-size:12px;
+                padding:0;
+            }
+        }
+        .cbot-right{//<!------------淘宝头条区域-->
+            float:left;
+            width:673px;
+            height:73px;
+            cursor:pointer;
+            img{
+                height:73px;
+                float: left;
+            }
+            h4{
+               margin-left:140px;
+               overflow:hidden;
+               line-height:24px;
+               font-weight: normal;
+            }
+            p{
+                margin-left:140px;
+                overflow:hidden;
+                padding:0;
+                line-height:24px;
+                font-size:12px;
+                color:#999;
+                @include p;
+            }
+            span{
+                line-height:24px;
+                float:right;
+                margin-right:10px;
+                font-size:12px;
+                color:#999;
+            }
+            i{
+                line-height:24px;
+            }
+        }
+        .content1-right{//最外层右边的容器
+            float:left;
+        }
+        //background: red;
+        .cleft{//最左边的导航容器
+            float:left;
+            width:190px;
+            padding:4px 0;
+            border:1px solid #ff5000;
+            box-sizing: border-box;
+        }
+        .cmid{//中间轮播图的容器
+            float:left;
+            height:522px;
+            box-sizing: border-box;
+            li{
+                float:left;
+                height:3px;
+                width:87px;
+                background: red;
+                &:nth-of-type(4){
+                    background: black;
+                }
+            }
+        }
+        .cmid-left{//------------------轮播图
+            float:left;
+            margin:10px;
+            height:522px;
+            box-sizing: border-box;
+        }
+        .lubo-bottom img{
+            width:100%;
+            height:208px;
+        }
+        .lubo-in{//理想生活上天猫
+            font-size:12px;
+            line-height:18px;
+            i{
+                line-height:18px;
+                display:inline-block;
+                vertical-align: middle;
+            }
+            em{
+                width:136px;
+                height:18px;
+                display:inline-block; 
+                 vertical-align: middle;
+                img{
+                    width:100%;
+                    height:100%;
+                } 
+           } 
+        }
+        .cmid-right{//轮播图右边的图片容器
+            height:522px;
+            margin:10px 0 0 0;
+            float:left;
+            box-sizing: border-box;
+        }
+        .temai{
+            font-size:14px;
+            line-height:30px;
+        }
+        p{
+            padding:0 4px 0 15px;
+        }
+        i{
+            float:right;
+            line-height:32px;
+        }
+        
+        .content1-right{//最外层右边的容器
+            float:left;
+            width:290px;
+            margin:10px 0px 10px 8px;
+            background: #fff;
+            box-sizing: border-box;
+        }
+        .cr-1{
+            text-align:center;  
+            width:100%;
+            height:145px;
+            background: url(../img/bg1.png) no-repeat;
+            background-size: 100% 145px;
+            img{
+                border-radius: 50%;
+                margin-top:4px;
+            }
+        }
+        .p1{
+            a{
+                line-height:17px;
+                width:102px;
+                border-radius: 25px 25px 25px 25px;
+                background: pink;
+                color:#ff5000;
+                i{
+                    float:left; 
+                    display:inline-block;
+                    width:16px;
+                    height:16px;
+                    background: url(../img/bg.png) no-repeat;
+                    background-size: 24px 597px;
+                }
+                &:nth-of-type(1) i{
+                    background-position: -0px -573px;
+                }
+                 &:nth-of-type(2) i{
+                    background-position: -0px -527px;
+                }
+            }
+        }
+        .p2 span{
+            width:75px;
+            line-height:25px;
+            display:inline-block;
+            background-image: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+            color:#fff;
+            margin-right:10px;
+            margin-top:10px;
+            border-radius: 5px;
+            a{
+                 color:#fff;
+            }
+        } 
+        a{
+            display:inline-block;
+            font-size:12px;
+        }
+        .cr-2{
+            text-align:center;
+            width:100%;
+            line-height:26px;
+            background: pink;
+            color:#ff5000;
+            i{
+                margin-right:30px;
+                margin-top:8px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                margin-left: 32px;
+                border-width: 5px 0 5px 7px;
+                border-color: transparent transparent transparent #f40;
+            }
+        }
+        .cr-3{//tab 切换区域
+            height:108px;
+            width:100%;
+            ul{
+                margin-bottom:10px;
+                 &:after{
+                    @include clear;
+                }
+            }
+            li{
+                line-height:24px;
+                padding-top:10px;
+                text-align: center;
+                width:20%;
+                float:left;
+                a{
+                    font-size:14px;
+                }
+            }
+        }
+        .tab p{//tab 切换区域
+            padding:0 5px;
+            width:100%;
+            line-height:24px;
+            @include p;
+        }
+        .cr-4{
+            &:after{
+            @include clear;
+            }
+            li{
+                
+                float:left;
+                width:70px;
+                height:75px;
+                border:1px solid #ccc;
+                $position:0px 0px,0px -44px,0px -88px,0px -130px,0px -175px,0px -222px,0px -264px,0px -306px,0px -352px,0px -394px,0px -440px,0px -484px;
+                @for $i from 1 through 12{
+                     &:nth-of-type(#{$i}) i{
+                        background-position: nth($position,$i);
+                     }
+                }
+            }
+            a{
+                text-align: center;
+                display: inline-block;
+                width:100%;
+                height:100%;
+            }
+            i{
+                float:none;
+                margin-top:15px;
+                display: inline-block;
+                width:24px;
+                height:24px;
+                background: url(../img/bg.png) no-repeat 0px 0px;
+                background-size: 24px 597px;
+             
+            }
+           
+            span{
+                display:inline-block;
+                line-height:28px;
+            }
+        }
+        .cr-5{    //    <!---------------- 阿里APP--------------->
+            height:110px;
+            width:100%;
+            padding:5px 10px;
+            box-sizing: border-box;
+            div{
+                width:100%;
+                line-height:24px;
+            }
+            h3{
+                    display:inline-block;
+                    font-size:16px;
+                    color:#000000;  
+                }
+            span{
+                height:24px;
+                display:inline-block;
+                float:right;
+                font-size:12px;
+            }
+            i{
+                display:inline-block;
+                line-height:24px;
+            }
+            li{
+                float:left;
+                height:32px;
+                width:32px;
+                margin-left:18px;
+                margin-top:5px;
+            }
+            img{
+                height:100%;
+                width:100%;
+            }
+        }
+    }
+//----------------------------------------------------------content2-------------------------------------------------
+    .content2{
+        margin-top:10px;
+        width:100%;
+        &:after{
+            @include clear;
+        }
+    }
+    .c2-div1,.c2-div3{
+        margin-right:10px;
+    }
+    .c2-div1,.c2-div2{
+        margin-bottom:10px;
+    }
+    .c2-div1,.c2-div2,.c2-div3,.c2-div4{
+        float:left;
+        background: #fff;
+        width:590px;
+        padding:15px;
+        box-sizing: border-box;
+    }
+    .c2-h{
+        line-height:24px;
+        margin-bottom:10px;
+        img{
+            height:24px;
+            float:left;
+            margin-right:10px;
+        }
+        span{
+            line-height:24px;
+            font-size:12px;
+            color:#999;
+        }
+        span:nth-of-type(2){
+            float:right;
+            margin-right:8px;
+        }
+        
+    }
+    .c2-u{
+        &:after{
+            @include clear;
+        } 
+        
+       h4{
+           line-height:24px;
+           font-weight: normal;
+           margin:0 6px;
+           @include p;
+       }
+       p{
+           line-height:24px;
+           color:#999;
+           font-size:12px;
+           @include p;
+           margin:0 6px;
+           &:nth-of-type(2){
+               color:#35b1ff;
+              margin-top:12px;
+           }
+       }
+       i,em{
+           color:#35b1ff;
+       }
+       
+       li{
+           float:left;
+           width:180px;
+           margin: 0 6px 17px 0px;
+           
+       }
+       img{
+           width:180px;
+           height:180px;
+       }
+    }
+//----------------------------------------------------------content3-------------------------------------------------
+    .content3{
+        margin-top:10px;
+        width:100%;
+        height:70px;
+        background: black;
+    }
+//----------------------------------------------------------content4-------------------------------------------------
+    .content4{
+        margin-top:10px;
+        width:100%;
+        background: #fff;
+        div{
+            width:100%;
+            line-height:60px;
+            i{
+                display:inline-block;
+                height:20px;
+                width:3px;
+                background: #f40;
+                vertical-align:middle;
+                margin-left:20px;
+            }
+            h3{
+                display:inline-block;
+                color:#f40;
+                font-size:20px;
+                margin-left:20px;
+                vertical-align:middle;
+            }
+        }
+        ul{
+           &:after{
+               @include clear;
+           } 
+        }
+        li{
+           a{
+               display:inline-block;
+               width:100%;
+               height:100%;
+           }
+           text-align:center;
+           padding:10px;
+           margin:3px;
+           float:left;
+           width:230px;
+           height:300px;
+           border:1px solid #ddd; 
+           box-sizing: border-box;
+           p{
+               @include p;
+               line-height:24px;
+               padding:10px 0;
+               font-size:12px;
+           }
+           span{
+               color:#f40;
+               float:left;
+           }
+        }
+    }
+//----------------------------------------------------------content5-------------------------------------------------
+    .content5{
+        margin-top:10px;
+        width:100%;
+        height:730px;
+        background: #FF5000;
+    }
+//----------------------------------------------------------content6-------------------------------------------------
+    .content6{
+        margin-top:10px;
+        width:100%;
+        height:290px;
+        background: #F25000;
+    }
+//----------------------------------------------------------content7-------------------------------------------------
+    .content7{
+        margin-top:10px;
+        width:100%;
+        height:180px;
+        background: #FF5300;
+    }
+//----------------------------------------------------------content8-------------------------------------------------
+    .content8{
+        margin-top:10px;
+        width:100%;
+        height:180px;
+        background: #FF5302;
+    }
+//----------------------------------------------------------content9-------------------------------------------------
+    //内容的底部区域
+    .content9{
+        padding:0px 0 20px ;
+        width:100%;
+        background: #f4f4f4;
+        border-bottom:1px solid #ddd;
+        &:after{
+            @include clear;
+        }
+        a{
+            font-size:12px;
+            color:#ccccd0;
+            margin:0 10px;
+            line-height:24px;
+            text-align:left;
+        }
+        span{
+            font-size:30px;
+            vertical-align: middle;
+            margin-right:15px;
+        }
+        h3{
+            display:inline-block;
+            line-height:48px;
+        }
+        ul{
+            li{
+                text-align:center;
+                float:left;
+                width:25%;
+                padding:40px 20px 0px;
+                height:180px;
+                box-sizing: border-box;
+            }
+        }
+        p{
+            font-size:18px;
+            text-align:center; 
+            color:#ccccd0;
+            line-height:50px;
+            i{
+                display: inline-block;
+                height:1px;
+                width: 60px;
+                background: #ccccd0;
+                vertical-align:middle;
+                margin: 20px;
+            } 
+        }
+    }
