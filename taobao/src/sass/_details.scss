@@ -72,14 +72,38 @@
     } 
    
 }
+.sf{
+    position:absolute;
+    opacity: 0.3;
+    background: pink;
+    visibility: hidden;
+    top:0;
+    left:0;
+}
+.bgpic{
+    width:460px;
+    height:460px;
+    background:blue;
+    position:absolute;
+    left:430px;
+    top:0;
+    display:none;
+    overflow: hidden;
+    img{
+        width:600px;
+        height:600px;
+        position:absolute;
+    }
+}
 .detabody-bot{
     padding:10px;
-   border:1px solid #E8E8E8;
-   margin-top:20px;
-   height:500px;
-  
+    border:1px solid #E8E8E8;
+    margin-top:20px;
+    height:500px;
+    position:relative;
 }
 .imgs{
+    cursor:pointer;
     ul{
         width:100%;
         &:after{
@@ -99,9 +123,17 @@
         }
     }
 }
+
+.smpic{
+        width:400px;
+        height:400px;
+        margin-bottom:10px;
+        position:relative;
+        border:1px solid #ccc;
+    }
 .img{
     float:left;
-    img{
+    .smimg{
         width:400px;
         height:400px;
         margin-bottom:10px;
@@ -289,6 +321,7 @@
       }
     }
 }
+
 .detabod-right{
     border:1px solid #ffe2a3;
     width:200px;

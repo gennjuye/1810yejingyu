@@ -11,7 +11,7 @@
     }
 }
 .pirce{
-    width:50px;
+    width:100px;
 }
 //------------------------空盒子
 .empty{      
@@ -164,11 +164,11 @@
             }
         }
         &:nth-of-type(5){
-            margin-left:45px;
+            margin-left:40px;
         }
         &:nth-of-type(6){
             position:relative;
-            margin-left:80px;
+            margin-left:40px;
             input{
                 width:41px;
                 height:20px;
@@ -248,9 +248,12 @@
         color:#f40;
     }
     em{
+        display:inline-block;
+        width:100px;
+        text-align:center;
         color:#f40;
         font-style:normal;
-        margin-right:5px;
+        margin:0 25px;
         font-size:24px;
     }
 }

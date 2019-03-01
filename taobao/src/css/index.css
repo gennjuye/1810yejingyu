@@ -26,8 +26,8 @@
 
 #side {
   position: fixed;
-  right: 140px;
-  bottom: 60px;
+  right: 20px;
+  bottom: 80px;
   height: 350px;
   background: #f4f4f4;
   text-align: center;
@@ -70,6 +70,9 @@
   color: #F40;
 }
 #side a:nth-of-type(6) {
+  line-height: 18px;
+}
+#side a:nth-of-type(7) {
   line-height: 40px;
 }
 #side a:nth-last-of-type(1) {
@@ -234,7 +237,7 @@
 #header .scenter i, #header .scenter .bod-list p em, .bod-list p #header .scenter em {
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 12px;
   font-size: 16px;
   color: #ccc;
 }
@@ -265,7 +268,7 @@
 }
 #header .scenter input {
   width: 554px;
-  height: 40px;
+  height: 34px;
   text-indent: 40px;
   border: 1px solid #ff5000;
   border-right: none;
@@ -276,7 +279,7 @@
   cursor: pointer;
   text-indent: 0px;
   width: 74px;
-  height: 44px;
+  height: 38px;
   padding-bottom: 4px;
   font-size: 16px;
   color: #fff;
@@ -324,6 +327,15 @@
   height: 30px;
   background-image: linear-gradient(to right, #ff9000, #ff5000);
 }
+#header .navbot span {
+  position: absolute;
+  font-size: 24px;
+  top: -24px;
+  left: 50%;
+  margin-left: -10px;
+  color: #f40;
+  display: none;
+}
 #header .navbot h2 {
   display: inline-block;
   width: 190px;
@@ -335,7 +347,8 @@
   background: #FF5000;
 }
 #header .navbot a {
-  font-size: 14px;
+  position: relative;
+  font-size: 16px;
   padding: 0 10px;
   color: #fff;
 }
@@ -370,7 +383,7 @@
 }
 .content1 .content1-left a {
   line-height: 32px;
-  font-size: 14px;
+  font-size: 12px;
   color: #666;
 }
 .content1 .cbot {
@@ -400,6 +413,17 @@
   width: 673px;
   height: 73px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.content1 .cbot-right ul {
+  position: absolute;
+  width: 673px;
+  height: 73px;
+}
+.content1 .cbot-right li {
+  width: 673px;
+  height: 73px;
 }
 .content1 .cbot-right img {
   height: 73px;
@@ -441,19 +465,35 @@
   padding: 4px 0;
   border: 1px solid #ff5000;
   box-sizing: border-box;
+  position: relative;
+  background: #fff;
+}
+.content1 .cleft a {
+  font-size: 12px;
+}
+.content1 .indexnav {
+  position: absolute;
+  width: 700px;
+  height: 519px;
+  border: 1px solid #f40;
+  background: blue;
+  left: 190px;
+  top: 0px;
+  z-index: 1;
+  display: none;
 }
 .content1 .cmid {
   float: left;
   height: 522px;
   box-sizing: border-box;
 }
-.content1 .cmid li {
+.content1 .cmid ul li {
   float: left;
   height: 3px;
   width: 87px;
   background: red;
 }
-.content1 .cmid li:nth-of-type(4) {
+.content1 .cmid ul li:nth-of-type(4) {
   background: black;
 }
 .content1 .cmid-left {
@@ -462,9 +502,92 @@
   height: 522px;
   box-sizing: border-box;
 }
-.content1 .lubo-bottom img {
+.content1 .lubo-img {
+  width: 520px;
+  height: 280px;
+  position: absolute;
+}
+.content1 .lubo-img img {
+  float: left;
+}
+.content1 .lubo-top {
+  cursor: pointer;
+  width: 520px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+.content1 .lubo-top ol {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -50px;
+  background: #ddd;
+  border-radius: 25px 25px 25px 25px;
+}
+.content1 .lubo-top ol li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 2px 5px;
+}
+.content1 .lubo-left, .content1 .lubo-right, .content1 .lubo-in-left, .content1 .lubo-in-right {
+  display: inline-block;
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+  top: 140px;
+  line-height: 30px;
+  width: 20px;
+  border-radius: 0 25px 25px 0;
+  background: #CCCCD0;
+  z-index: 1;
+  display: none;
+}
+.content1 .lubo-in-left {
+  text-align: left;
+  left: 0px;
+  top: 100px;
+}
+.content1 .lubo-in-right {
+  text-align: right;
+  right: 0px;
+  border-radius: 25px 0px 0px 25px;
+  top: 100px;
+}
+.content1 .lubo-left {
+  text-align: left;
+  left: 0px;
+}
+.content1 .lubo-right {
+  text-align: right;
+  right: 0px;
+  border-radius: 25px 0px 0px 25px;
+}
+.content1 .lubo-in-img {
   width: 100%;
   height: 208px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+}
+.content1 #ul {
+  position: absolute;
+}
+.content1 #ul li {
+  float: left;
+  width: 520px;
+  height: 208px;
+  background: #fff;
+}
+.content1 #ul li img {
+  width: 251px;
+  height: 190px;
+  float: left;
+  margin: 10px 4px;
 }
 .content1 .lubo-in {
   font-size: 12px;
@@ -524,7 +647,7 @@
   line-height: 17px;
   width: 102px;
   border-radius: 25px 25px 25px 25px;
-  background: pink;
+  background: #ffe4dd;
   color: #ff5000;
 }
 .content1 .p1 a i, .content1 .p1 a .bod-list p em, .bod-list p .content1 .p1 a em {
@@ -551,6 +674,9 @@
   margin-top: 10px;
   border-radius: 5px;
 }
+.content1 .p2 span:nth-of-type(1) {
+  width: 90px;
+}
 .content1 .p2 span a {
   color: #fff;
 }
@@ -562,8 +688,9 @@
   text-align: center;
   width: 100%;
   line-height: 26px;
-  background: pink;
+  background: #ffe4dd;
   color: #ff5000;
+  font-size: 12px;
 }
 .content1 .cr-2 i, .content1 .cr-2 .bod-list p em, .bod-list p .content1 .cr-2 em {
   margin-right: 30px;
@@ -598,14 +725,105 @@
 }
 .content1 .cr-3 li a {
   font-size: 14px;
+  padding: 0 5px;
+  border-bottom: 1px solid #fff;
+}
+.content1 .tab {
+  width: 290px;
+  height: 61px;
+  position: relative;
+}
+.content1 .tab div {
+  position: absolute;
+  width: 290px;
+  height: 61px;
+  display: none;
+}
+.content1 .tab div:nth-of-type(1) {
+  display: block;
 }
 .content1 .tab p {
   padding: 0 5px;
-  width: 100%;
+  width: 290px;
   line-height: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.content1 .ul {
+  position: relative;
+}
+.content1 .ul li {
+  box-sizing: border-box;
+}
+.content1 .ul .li {
+  position: relative;
+}
+.content1 .ul .ph {
+  cursor: pointer;
+  position: absolute;
+  width: 287px;
+  height: 154px;
+  top: 74px;
+  background: #fff;
+  display: none;
+  border: 1px solid #fff;
+}
+.content1 .ul .ph .conve-bd-box-close {
+  font-size: 20px;
+  position: absolute;
+  right: 5px;
+}
+.content1 .chongzhi {
+  position: absolute;
+  width: 275px;
+  height: 117px;
+  border: none;
+  top: 35px;
+  left: 10px;
+}
+.content1 .phone, .content1 .travel, .content1 .car {
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  position: relative;
+}
+.content1 .phone em, .content1 .travel em, .content1 .car em {
+  font-style: normal;
+}
+.content1 .phone a, .content1 .travel a, .content1 .car a {
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 24px;
+}
+.content1 .phone input, .content1 .travel input, .content1 .car input {
+  width: 188px;
+  height: 22px;
+}
+.content1 .phone span, .content1 .travel span, .content1 .car span {
+  display: block;
+  width: 67px;
+  line-height: 26px;
+  text-align: center;
+  background: #f50;
+  color: #fff;
+}
+.content1 .phone p, .content1 .travel p, .content1 .car p {
+  padding: 0;
+  line-height: 24px;
+}
+.content1 .phone strong, .content1 .travel strong, .content1 .car strong {
+  color: #f40;
+}
+.content1 .travel a {
+  padding: 0 2px;
+}
+.content1 .car a {
+  padding: 0 6px;
+}
+.content1 .cr-4 {
+  width: 290px;
+  height: 231px;
 }
 .content1 .cr-4:after {
   content: "";
@@ -616,7 +834,7 @@
 }
 .content1 .cr-4 li {
   float: left;
-  width: 70px;
+  width: 72px;
   height: 75px;
   border: 1px solid #ccc;
 }
@@ -656,11 +874,12 @@
 .content1 .cr-4 li:nth-of-type(12) i, .content1 .cr-4 li:nth-of-type(12) .bod-list p em, .bod-list p .content1 .cr-4 li:nth-of-type(12) em {
   background-position: 0px -484px;
 }
-.content1 .cr-4 a {
+.content1 .cr-4 li a {
   text-align: center;
   display: inline-block;
   width: 100%;
   height: 100%;
+  background: #fff;
 }
 .content1 .cr-4 i, .content1 .cr-4 .bod-list p em, .bod-list p .content1 .cr-4 em {
   float: none;
@@ -807,16 +1026,16 @@
   background: black;
 }
 
-.content4 {
+.content4, .content5 {
   margin-top: 10px;
   width: 100%;
   background: #fff;
 }
-.content4 div {
+.content4 div, .content5 div {
   width: 100%;
   line-height: 60px;
 }
-.content4 div i, .content4 div .bod-list p em, .bod-list p .content4 div em {
+.content4 div i, .content4 div .bod-list p em, .bod-list p .content4 div em, .content5 div i, .content5 div .bod-list p em, .bod-list p .content5 div em {
   display: inline-block;
   height: 20px;
   width: 3px;
@@ -824,36 +1043,36 @@
   vertical-align: middle;
   margin-left: 20px;
 }
-.content4 div h3 {
+.content4 div h3, .content5 div h3 {
   display: inline-block;
   color: #f40;
   font-size: 20px;
   margin-left: 20px;
   vertical-align: middle;
 }
-.content4 ul:after {
+.content4 ul:after, .content5 ul:after {
   content: "";
   display: block;
   clear: both;
   overflow: hidden;
   visibility: hidden;
 }
-.content4 li {
+.content4 li, .content5 li {
   text-align: center;
   padding: 10px;
   margin: 3px;
   float: left;
   width: 230px;
-  height: 300px;
+  height: 330px;
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-.content4 li a {
+.content4 li a, .content5 li a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.content4 li p {
+.content4 li p, .content5 li p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -861,7 +1080,7 @@
   padding: 10px 0;
   font-size: 12px;
 }
-.content4 li span {
+.content4 li span, .content5 li span {
   color: #f40;
   float: left;
 }
@@ -869,8 +1088,15 @@
 .content5 {
   margin-top: 10px;
   width: 100%;
-  height: 730px;
-  background: #FF5000;
+}
+.content5 li {
+  position: relative;
+}
+.content5 div h3 {
+  color: #ff9f00;
+}
+.content5 div i, .content5 div .bod-list p em, .bod-list p .content5 div em {
+  background: #ff9f00;
 }
 
 .content6 {
@@ -1144,16 +1370,6 @@
   margin-top: 30px;
   text-indent: 45px;
 }
-#bodyed button {
-  width: 304px;
-  height: 42px;
-  background: #f40;
-  border: 0;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 5px;
-  margin: 20px 0;
-}
 
 .login {
   height: 350px;
@@ -1165,10 +1381,24 @@
   padding: 25px;
   box-sizing: border-box;
   color: #6c6c6c;
+  cursor: pointer;
 }
 
 #form {
+  cursor: pointer;
   position: relative;
+}
+#form a {
+  display: block;
+  width: 304px;
+  height: 42px;
+  background: #f40;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 42px;
 }
 #form i, #form .bod-list p em, .bod-list p #form em {
   position: absolute;
@@ -1399,14 +1629,41 @@
   width: 60px;
 }
 
+.sf {
+  position: absolute;
+  opacity: 0.3;
+  background: pink;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bgpic {
+  width: 460px;
+  height: 460px;
+  background: blue;
+  position: absolute;
+  left: 430px;
+  top: 0;
+  display: none;
+  overflow: hidden;
+}
+.bgpic img {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+}
+
 .detabody-bot {
   padding: 10px;
   border: 1px solid #E8E8E8;
   margin-top: 20px;
   height: 500px;
+  position: relative;
 }
 
 .imgs {
+  cursor: pointer;
   width: 400px;
 }
 .imgs ul {
@@ -1431,10 +1688,18 @@
   height: 50px;
 }
 
+.smpic {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
 .img {
   float: left;
 }
-.img img {
+.img .smimg {
   width: 400px;
   height: 400px;
   margin-bottom: 10px;
@@ -1747,7 +2012,7 @@
 }
 
 .pirce {
-  width: 50px;
+  width: 100px;
 }
 
 .empty {
@@ -1907,11 +2172,11 @@
   color: #ddd;
 }
 .list-in span:nth-of-type(5) {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 .list-in span:nth-of-type(6) {
   position: relative;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 .list-in span:nth-of-type(6) input {
   width: 41px;
@@ -1996,9 +2261,12 @@
   color: #f40;
 }
 .bod-total-right em {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
   color: #f40;
   font-style: normal;
-  margin-right: 5px;
+  margin: 0 25px;
   font-size: 24px;
 }
 

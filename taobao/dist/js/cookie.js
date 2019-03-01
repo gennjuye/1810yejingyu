@@ -1,1 +1,17 @@
-function addcookie(e,o,t){var n=new Date;n.setDate(n.getDate()+t),document.cookie=e+"="+encodeURIComponent(o)+";expires="+n}function getcookie(e){for(var o=decodeURIComponent(document.cookie).split("; "),t=0;t<o.length;t++){var n=o[t].split("=");if(e==n[0])return n[1]}}function delcookie(e){addcookie(e,"",-1)}
+function addcookie(key,value,day){
+	var date=new Date();
+	date.setDate(date.getDate()+day);
+	document.cookie=key+'='+encodeURIComponent(value)+';expires='+date;
+}
+function getcookie(key){
+	var arr=decodeURIComponent(document.cookie).split('; ');
+	for(var i=0;i<arr.length;i++){
+		var newarr=arr[i].split('=');
+		if(key==newarr[0]){
+			return newarr[1];
+		}
+	}
+}
+function delcookie(key){
+	addcookie(key,'',-1);
+}

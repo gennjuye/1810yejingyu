@@ -8,6 +8,7 @@
 		<title>淘宝网-淘！我喜欢</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/index.css" />
+		<link rel="shortcut icon" href="http://www.taobao.com/favicon.ico" />
 		<style>
 			@font-face {
 				font-family: iconfont;
@@ -36,15 +37,15 @@
 			<div class="login">
 				<h3>密码登录</h3>
   				<form id="form"action="">
-  					<i class="iconfont" title="会员名" data-spm-anchor-id="a2107.1.0.i3.406711d992NkRY"></i><input type="text" placeholder="会员名/邮箱/手机号"/>	
-					<i class="icon iconfont" title="登录密码"></i><input type="text" />
-					<button value="">登录</button>
+  					<i class="iconfont" title="会员名" data-spm-anchor-id="a2107.1.0.i3.406711d992NkRY"></i><input type="text" placeholder="会员名/邮箱/手机号" class="vip"/>	
+					<i class="icon iconfont" title="登录密码"></i><input type="password" class="password"/>
+					<a href="javascript:;">登录</a>
   				</form>
 				<p>
 					<i class="iconfont"></i> <a href="">微博登录</a>
 					<i class="iconfont"></i> <a href="">支付宝登录</a>
 				</p>
-				<span><a href="">忘记密码</a><a href="">忘记会员名</a><a href="">免费注册</a></span>
+				<span><a href="">忘记密码</a><a href="">忘记会员名</a><a href="registor.html">免费注册</a></span>
 			</div>
 		</div>
 		<div id="footed">
@@ -89,6 +90,8 @@
 				<em></em>
 			</div>
 		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/login.js"></script>
 	</body>
 
 </html>
